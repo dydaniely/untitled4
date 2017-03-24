@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><csApplication>
+<csCollDocuments>
+<csDocument master="Claim_Ack" res_loc="">
+<instanceData><![CDATA[<srcUNID>C64B1CA40AED78C8852580ED0065541D</srcUNID>]]></instanceData>
+</csDocument>
+<csCollData>
+<variable name="ClaimNumber" type="String">022017001086</variable>
+</csCollData>
+</csCollDocuments>
+</csApplication>
