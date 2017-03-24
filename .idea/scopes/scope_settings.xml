@@ -1,5 +1,42 @@
-<component name="DependencyValidationManager">
-  <state>
-    <option name="SKIP_IMPORT_STATEMENTS" value="false" />
-  </state>
-</component>
+This XML file does not appear to have any style information associated with it. The document tree is shown below.
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:lm="http://www.lititzmutual.com/LMICTypes" elementFormDefault="qualified">
+<xs:import schemaLocation="LMICTypes.xsd" namespace="http://www.lititzmutual.com/LMICTypes"/>
+<xs:element name="Documents">
+<xs:complexType>
+<xs:sequence>
+<xs:element ref="Document" minOccurs="1" maxOccurs="unbounded"/>
+</xs:sequence>
+<xs:attribute name="NumDocs" use="required" type="xs:int"/>
+</xs:complexType>
+</xs:element>
+<xs:element name="Document">
+<xs:complexType>
+<xs:sequence>
+<xs:element ref="Claim" minOccurs="0"/>
+<xs:element ref="Claimant" minOccurs="0" maxOccurs="unbounded"/>
+<xs:element ref="Adjuster" minOccurs="0"/>
+<xs:element ref="Attorney" minOccurs="0"/>
+<xs:element ref="Agent" minOccurs="0"/>
+<xs:element ref="Policy" minOccurs="0"/>
+<xs:element ref="AdverseCarrier" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="Claim">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="ClaimNumber" type="lm:ClaimNumber"/>
+<xs:element name="DateOfLoss" type="xs:date"/>
+<xs:element name="LossType" type="xs:string"/>
+<xs:element name="LossDesc" type="xs:string"/>
+<xs:element name="DateOfClaim" type="xs:date"/>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="Claimant">...</xs:element>
+<xs:element name="Adjuster">...</xs:element>
+<xs:element name="Attorney">...</xs:element>
+<xs:element name="Policy">...</xs:element>
+<xs:element name="Agent">...</xs:element>
+<xs:element name="AdverseCarrier">...</xs:element>
+</xs:schema>
